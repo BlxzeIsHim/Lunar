@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="sidebar">
+    <button id="settings">
+      <i class="fas fa-cog"></i> Settings
+    </button>
+    <button id="about">
+      <i class="fas fa-info-circle"></i> About
+    </button>
+  </div>
+
+  <div id="main-content">
+    <div id="header">
+      <h1>Project Viewer</h1>
+    </div>
+    
+    <div id="toolbar">
+      <button id="create-project">Create Project</button>
+      <input type="text" id="project-name" placeholder="Enter project name" class="hidden">
+    </div>
+    
+    <div id="project-list-container">
+      <h2 id="project-list-title">Your Projects</h2>
+      <div id="project-list">
+        <!-- Projects will be dynamically inserted here -->
+      </div>
+    </div>
+    
+    <div id="status">Status: Ready</div>
+    
+    <div id="popup">
+      <h3>Project Actions</h3>
+      <button id="open-project">Open Project</button>
+      <button id="delete-project">Delete Project</button>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
